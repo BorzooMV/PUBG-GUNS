@@ -13,6 +13,10 @@ body {
   padding: 0px;
 }
 
+.cards {
+  margin: auto;
+}
+
 .card-gun {
   width: 374px;
   height: 812px;
@@ -62,6 +66,35 @@ body {
 }
 .card-gun .card-gun-bottom ul:nth-child(2) {
   text-align: right;
+}
+
+.cards {
+  display: flex;
+  flex-basis: 90vw;
+  justify-content: space-evenly;
+}
+
+@media all and (max-width: 1150px) {
+  .card-gun {
+    transform: scale(0.8);
+  }
+}
+@media all and (max-width: 960px) {
+  .card-gun {
+    transform: none;
+    margin-bottom: 100px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+}
+@media all and (max-width: 500px) {
+  body {
+    width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
